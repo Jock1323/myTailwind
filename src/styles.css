@@ -1,0 +1,28 @@
+@media only screen and (max-width:640px){
+    .nav__list{
+        padding-top: 20px;
+        position: fixed;
+        width: 100%;
+        height: 95vh;
+        background-color: rgba(255, 255, 255,.8);
+        left: 0;
+        top:90px;
+        transform: translateX(-100%);
+        transition:transform .4s;
+    }
+    .nav__list-active{
+        transform: translateX(0);
+    }
+    .times{
+        display: none;
+    }
+    .times-active{
+        display:block;
+    }
+}
+@media only screen and (min-width:640px){
+    .times,
+    .times-active{
+        display: none;
+    }
+}
